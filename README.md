@@ -11,7 +11,7 @@
 
 ### TODOS
  - [ ] Add help command
- - [x] Add recursive traversal of parent directory and covert those files.
  - [ ] Add loader for bulk operation.
  - [x] Suppress FFmpeg output
- - [ ] Add option to remove source files
+ - [x] Add option to remove source files
+ - [x] Add recursive traversal of parent directory and covert those files.
