@@ -1,15 +1,21 @@
 #!/bin/sh
 
+function help(){
+    echo "Use : sh main.sh [-r][-h] -p <path/to/parent/directory>"
+    echo -e "\t -h \t shows this help utility"
+    echo -e "\t -r \t removes source files after conversion"
+}
 
 PWD=$(pwd)
 DELETE="false"
 
 #Check for flags
-while getopts :p:r aflag
+while getopts :p:rh aflag
 do
     case $aflag in
         r) DELETE="true";;
         p) PARENT_DIR=$OPTARG;;
+        h) help;exit 0;;
         ?) echo "Illegal flag : $aflag, terminating";exit -1;;
     esac
 done
