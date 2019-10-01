@@ -1,6 +1,6 @@
 # mojito
 
-`mojito` is a command line utility for converting/encodingvideo files to HEVC 265 format. `mojito`is a wrapper around powerful `FFmpeg` library and supports conversion of files in bulk. Learn more about `FFmpeg` [here](https://www.ffmpeg.org/)
+`mojito` is a command line utility for converting/encoding video files to HEVC 265 format. `mojito` is a wrapper around powerful `FFmpeg` library and supports conversion of files in bulk. Learn more about `FFmpeg` [here](https://www.ffmpeg.org/)
 
 ### USE
 `sh main.sh [-r] -p </path/to/parent/directoty>`
@@ -13,7 +13,7 @@
 
 ### TODOS
  - [ ] Add loader for bulk operation.
- - [x] Suppress FFmpeg output
- - [x] Add option to remove source files
+ - [x] Suppress FFmpeg output.
+ - [x] Add option to remove source files.
  - [x] Add recursive traversal of parent directory and covert those files.
- - [x] Add help command
+ - [x] Add help command.
