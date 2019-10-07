@@ -6,6 +6,13 @@
 
 Learn more about `FFmpeg` [here](https://www.ffmpeg.org/).
 
+### REQUIREMENTS
+
+#### FFmpeg
+
+&nbsp;&nbsp;&nbsp;&nbsp; Ubuntu: `sudo apt install ffmpeg`
+
+&nbsp;&nbsp;&nbsp;&nbsp; Mac OSx: `brew install ffmpeg`
 
 ### USE
 ```
