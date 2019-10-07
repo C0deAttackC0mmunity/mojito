@@ -8,7 +8,7 @@ function help(){
 
 PWD=$(pwd)
 DELETE="false"
-
+PARENT_DIR=$PWD
 #Check for flags
 while getopts :p:rh aflag
 do
@@ -22,12 +22,12 @@ done
 
 cd "$PARENT_DIR"
 
-FILE_LIST=$(find  -type f -exec file -N -i -- {} + | sed -n 's!: video/[^:]*$!!p')
+FILE_LIST=$(find . -type f -exec file -N -i -- {} + | sed -n 's!: video/[^:]*$!!p')
 DEL_LIST=$FILE_LIST
 echo "$FILE_LIST" 
-echo "Do you want to convert these files?"
+echo "Do you want to convert these files? (y/$(tput bold)n$(tput sgr0))"
 read y
-if [ $y == 'y' ]
+if [[ ! -z "$y" ]] && [[ $y == 'y' ]]
 then
     while read -r FILE_LIST
     do
